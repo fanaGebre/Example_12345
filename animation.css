@@ -1,0 +1,40 @@
+/* Reset default margin and padding */
+body, button {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+/* Style the animated button */
+.animated-button {
+   display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+   
+    animation: pulse 1s infinite alternate;
+}
+
+/* Apply transition on hover */
+.animated-button:hover {
+    background-color: #0056b3;
+}
+
+/* Define the pulse animation */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(3.1);
+    }
+}
